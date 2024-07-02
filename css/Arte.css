@@ -1,0 +1,442 @@
+@font-face {
+    font-family: 'Circus' ;
+    src: url(../font/Circus.ttf);
+}
+@font-face {
+    font-family: 'letra' ;
+    src: url(../font/letra.otf);
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0px;
+    background-color: black;
+}
+#caja1
+{
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    margin: 0%;
+    
+}
+#fig
+{
+    text-align: center;
+   
+}
+
+#mano
+{
+    height: 300px;
+    width: 500px;
+}
+#mano1
+{
+    text-align: center;
+    margin-top: 100px;
+    transition: 5s;
+    -moz-transition: 5s;
+    -webkit-transition: 5s;
+    -o-transition: 5s;
+    
+}
+#mano1:hover
+{
+transform:rotate(360deg);
+-ms-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-webkit-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+}
+#intro
+{
+    font-family: 'Circus' ;
+    text-align: center;
+    color: #e70606;
+    font-size: 20px;
+    margin-left: 50px;
+}
+#intro p 
+{
+   animation-duration: 5s;
+   animation-name: slidein;
+   animation-iteration-count: infinite;
+}
+@keyframes slidein 
+{
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+
+
+
+
+
+nav
+{
+    
+    width: 30%;
+    position: fixed ;
+    margin-top: 1%;
+    border-bottom: 2px solid transparent;
+    left: 1%;
+    
+  
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    border: 1px solid #e70606;
+    background-color: #7c3939;
+    border-radius: 10px;
+   
+}
+li:last-child {
+    border-bottom: none;
+  }
+  
+li a:hover
+{
+    background-color: #423535;
+    color: white;
+}
+li{
+    text-align: center;
+    border-bottom: 1px solid #f70707;
+    font-family: 'Circus';
+}
+  
+li a, #desplegar_menu
+{
+    display: block;
+    text-decoration: none;
+    font-family: 'Circus' ;
+    color: black;
+    margin: 5px;
+    font-size: 20px;
+ 
+    
+}
+#menu_principal ul:hover
+{
+    opacity: 1;
+  
+}
+#menu_principal ul li a:hover
+{
+    opacity: 1;
+    color: rgb(228, 5, 5);
+    text-shadow: #EEE;
+
+}
+
+
+
+
+
+
+section
+{
+    width: 100%;
+    height: 800px;
+    padding: 0%;
+    margin: 2px;
+    background-color: #EEE;
+}
+#fig3
+{
+ 
+    text-align: right;
+    margin: 10px;
+    
+   
+}
+#s2
+{
+    background-image: url(../media/paisaje0.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+   
+}
+#fig2
+{
+    text-align: right;
+    margin: 10px;
+    margin-top: -40px;
+   
+}
+#s3
+{
+    background-image: url(../media/paisaje1.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+   
+}
+#s4
+{
+    background-image: url(../media/paisaje11.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+   
+}
+#s5
+{
+    background-image: url(../media/paisaje4.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#s6
+{
+    background-image: url(../media/paisaje2.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.parallax
+{
+    background: #fff no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right top;
+    /*animation: gradientAnimation 15s ease infinite;
+    filter: grayscale(50%) blur(2px) brightness(80%);*/
+}
+/*
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}*/
+
+h1
+{
+    width: 60%;
+    color: #f70707;
+    font-family: 'letra' ;
+    font-size: 30px;
+    text-align: right;
+    text-shadow: 
+     -2px -2px 0 #000,  
+     -1px 1px 0 #000,
+     -2px  -2px 0 #000,
+     1px  1px 0 #000;
+  
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+.parr
+{
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0px #f70707;
+    backdrop-filter: blur(40px);
+    border: 10px double rgba(4, 87, 76, 0.37); 
+    margin-top: 2%;
+    padding: 1rem; 
+    margin-right: 200px;
+    height: 200px;
+    backdrop-filter: blur(1px);
+    color: #f70707;
+    font-family: 'letra' ;
+    font-size: 20px;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    -1px 1px 0 #000,
+    -2px  -2px 0 #000,
+    1px  1px 0 #000;
+   
+}
+.parr2
+{
+    width: 200px;
+    height: 400px;
+    transition: width 2s, height 4s;
+    background-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0px #f70707;
+    backdrop-filter: blur(40px);
+    border: 10px double rgba(4, 87, 76, 0.37); 
+    margin-top: 2%;
+    padding: 1rem; 
+    margin-right: 200px;
+    backdrop-filter: blur(1px);
+    color: #f70707;
+    font-family: 'letra' ;
+    font-size: 20px;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    -1px 1px 0 #000,
+    -2px  -2px 0 #000,
+    1px  1px 0 #000;
+   
+}
+.parr2:hover
+{
+    width: 500px;
+    height: 200px;
+
+}
+
+
+
+.art
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.imag img
+{
+    width: 500px;
+    height: 300px;
+    background: no-repeat;
+    position: sticky;
+    top: 10rem;
+    
+}
+.imag
+{
+  
+   /*float: left;*/
+   width: 60%;
+   margin-top: 10%;
+   margin-left: 200px;
+   
+}
+.imag1
+{
+  
+   /*float: left;*/
+   width: 60%;
+   margin-top: 2%;
+   margin-left: 200px;
+   
+}
+.imag1 img
+{
+    width: 500px;
+    height: 500px;
+    background: no-repeat;
+    position: sticky;
+    top: 5rem;
+    
+}
+.imag2
+{
+  
+   /*float: left;*/
+   width: 60%;
+   margin-top: 2%;
+   margin-left: 200px;
+   position: relative;
+   animation-name: example;
+   animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+.imag4 img
+{
+    width: 500px;
+    height: 425px;
+    background: no-repeat;
+    position: sticky;
+    top: 10rem;
+    
+}
+.imag4
+{
+  
+   /*float: left;*/
+   width: 60%;
+   margin-top: 1%;
+   margin-left: 200px;
+   
+}
+
+#tamaño
+{
+    width: 400px;
+    height: 400px;
+}
+
+/*#tamaño2
+{
+    height: 400px;
+}*/
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+.imag2 img
+{
+    width: 500px;
+    height: 500px;
+    background: no-repeat;
+    position: sticky;
+    top: 5rem;
+    
+}
+#unico
+{
+    animation-name: parpadeo;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
